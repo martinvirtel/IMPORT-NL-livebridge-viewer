@@ -1,0 +1,70 @@
+{ "clients" : {
+        "5788290ec158bd0679132d43" : {
+          "label" : "Nizza",
+          "links" : [
+              { "url" : "https://www.msn.com/de-de/nachrichten/panorama/liveblog-zum-anschlag-in-nizza-zwei-deutsche-sch%c3%bclerinnen-und-eine-lehrerin-vermisst-iran-verurteilt-anschlag/ar-BBumpbG?li=AAaxdRI&ocid=spartandhp", "title" : "msn" },
+              { "url" : "http://www.augsburger-allgemeine.de/politik/Lkw-rast-in-Menschenmenge-Ueber-80-Tote-bei-Anschlag-in-Nizza-id38480977.html", "title" : "Augsburger Allgemeine" }
+            ]
+        },
+        "578bb3ffc158bd069570d8a8" : {
+          "links" : [
+              { "url" : "http://www.sz-online.de/nachrichten/polizei-mindestens-fuenf-tote-bei-anschlag-in-muenchen-3450401.html", "title" : "Sächsische Zeitung" },
+              { "url" : "http://www.swp.de/ulm/nachrichten/politik/Liveticker-Mindestens-Sechs-Tote-in-Muenchen-Polizei-spricht-von-Terrorlage;art4306,3937739", "title" : "Südwestpresse" }
+            ]
+
+        },
+
+        "578949e7c158bd0679132ddd" : {
+          "label" : "Türkei",
+          "links" : [
+              { "url" : "http://www.stimme.de/deutschland-welt/politik/dw/Live-Blog-Militaer-verkuendet-Machtuebernahme-in-der-Tuerkei;art295,3672977", "title" : "Mannheimer Morgen" },
+              { "url" : "http://www.rundschau-online.de/politik/newsticker-militaerputsch-in-der-tuerkei-24404226", "title" : "Kölnische Rundschau" },
+              { "url" : "./tuerkei/", "title" : "Auswertung" }
+            ]
+        },
+        "576a8ac4c158bd066b856000" : {
+          "label" : "Kurios",
+          "links" : [
+              { "url" : "http://www.noz.de/deutschland-welt/vermischtes/artikel/507465/skurrile-meldungen-polizei-blitzt-papagei-im-flug#gallery&0&0&507465", "title" : "NOZ" },
+              { "url" : "http://www.live.mittelbayerische.de/Event/Kurios", "title" : "Mittelbayerische" }
+            ]
+        },
+        "576f8e04c158bd0686e0245f" : {
+          "label" : "US-Wahlen",
+          "links" : [
+              { "url" : "http://live.shz.de/Event/US-Prasidentschaftswahl_2016", "title" : "SHZ.de" },
+              { "url" : "http://www.t-online.de/nachrichten/specials/id_77123030/us-wahlen-trump-und-clinton-gelten-in-indiana-als-favoriten.html", "title" : "T-Online (1)" },
+              { "url" : "http://www.t-online.de/nachrichten/specials/id_76948652/wahlen-in-den-usa.html", "title" : "T-Online (2)" },
+              { "url" : "http://www.deutschlandfunk.de/us-vorwahlen-2016.2618.de.html", "title" : "DLF / Elections Live" },
+              { "url" : "http://www.lz.de/dossier/us_wahl_2016/uebersicht/?utm_campaign=kurzverlinkung&utm_source=wahlusa_dpa#/blog", "title" : "lz.de/Elections Live" }
+            ]
+        },
+        "576f8ef6c158bd067dd847f6" : {
+          "label" : "Flüchtlinge",
+          "links" : [
+              { "url" : "http://www.shz.de/deutschland-welt/politik/liveblog-probelauf-fuer-fluechtlingsausweise-startet-id10648396.html", "title" : "SHZ.de Embed" },
+              { "url" : "http://live.shz.de/Event/Die_Fluchtlingskrise_in_Deutschland_und_Europa", "title" : "SHZ.de Custom Site" }
+            ]
+        },
+        "576f8d27c158bd069b9caf45" : {
+          "label" : "Kampf gegen IS",
+          "links" : [
+              { "url" : "http://www.live.mittelbayerische.de/Event/Der_Irak-Konflikt", "title" : "Mittelbayerische" },
+              { "url" : "http://liveblog.t-online.de/Event/Der_Kampf_gegen_den_IS-Terror", "title" : "T-Online" }
+            ]
+        },
+        "576f8db6c158bd067dd847ef" : {
+          "label" : "Bundesliga",
+          "links" : [
+              { "url" : "http://www.t-online.de/sport/fussball/bundesliga/id_73395708/bundesliga-news-eintracht-frankfurt-verlaengert-mit-flum.html", "title" : "T-Online" }
+            ]
+        },
+        "576f8fb2c158bd069570d5d9" : {
+          "label" : "Fotos",
+          "links" : [
+              { "url" : "http://www.morgenweb.de/dossier/die-top-bilder-des-tages", "title" : "Mannheimer Morgen" },
+              { "url" : "http://liveblog.t-online.de/Event/Bilder_des_Tages_3", "title" : "T-Online" }
+            ]
+        }
+    }
+}

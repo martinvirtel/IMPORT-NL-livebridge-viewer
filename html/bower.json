@@ -1,0 +1,21 @@
+{
+  "name": "html",
+  "authors": [
+    "Martin Virtel <martin.virtel@gmail.com>"
+  ],
+  "description": "",
+  "main": "",
+  "moduleType": [],
+  "license": "MIT",
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "dialog-polyfill": "~0.4.3"
+  }
+}

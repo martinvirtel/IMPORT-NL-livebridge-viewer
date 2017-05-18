@@ -1,0 +1,100 @@
+{
+ "bridges": [
+  {
+   "blog_id": "576a8ac4c158bd066b856000", 
+   "endpoint": "https://dpa-api.liveblog.pro/api/", 
+   "targets": [
+    {
+     "event_id": "686391", 
+     "type": "scribble", 
+     "user": "admin"
+    }
+   ], 
+   "label": "Kurioses"
+  }, 
+  {
+   "blog_id": "576f8d27c158bd069b9caf45", 
+   "endpoint": "https://dpa-api.liveblog.pro/api/", 
+   "targets": [
+    {
+     "event_id": "679672", 
+     "type": "scribble", 
+     "user": "admin"
+    }
+   ], 
+   "label": "Kampf gegen IS"
+  }, 
+  {
+   "blog_id": "576f8ef6c158bd067dd847f6", 
+   "endpoint": "https://dpa-api.liveblog.pro/api/", 
+   "targets": [
+    {
+     "event_id": "1467124", 
+     "type": "scribble", 
+     "user": "admin"
+    }
+   ], 
+   "label": "Fl\u00fcchtlingskrise"
+  }, 
+  {
+   "blog_id": "576f8db6c158bd067dd847ef", 
+   "endpoint": "https://dpa-api.liveblog.pro/api/", 
+   "targets": [
+    {
+     "event_id": "997275", 
+     "type": "scribble", 
+     "user": "admin"
+    }
+   ], 
+   "label": "Bundesliga"
+  }, 
+  {
+   "blog_id": "576f8e04c158bd0686e0245f", 
+   "endpoint": "https://dpa-api.liveblog.pro/api/", 
+   "targets": [
+    {
+     "event_id": "1613263", 
+     "type": "scribble", 
+     "user": "admin"
+    }
+   ], 
+   "label": "US-Wahlen"
+  }, 
+  {
+   "blog_id": "576f8fb2c158bd069570d5d9", 
+   "endpoint": "https://dpa-api.liveblog.pro/api/", 
+   "targets": [
+    {
+     "event_id": "1253465", 
+     "type": "scribble", 
+     "user": "admin"
+    }
+   ], 
+   "label": "Fotos"
+  },
+  {
+  "blog_id"   :  "575838e8c158bd068b69e832",
+  "label"     : "testbridge",
+  "endpoint"  : "https://dpa-api.liveblog.pro/api/",
+      "targets" : [
+            { "type": "scribble",
+              "event_id" : "2116258",
+              "user": "admin"
+            }
+      ]
+
+  },
+  {
+   "blog_id": "576967fdc158bd068036eec8", 
+   "endpoint": "https://dpa-api.liveblog.pro/api/", 
+   "targets": [
+    {
+     "event_id": "2152872", 
+     "type": "scribble", 
+     "user": "admin"
+    }
+   ], 
+   "label": "test"
+  }
+ ]
+}

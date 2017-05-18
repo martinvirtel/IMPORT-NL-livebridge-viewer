@@ -1,0 +1,300 @@
+<!doctype html>
+<!--
+  Material Design Lite
+  Copyright 2015 Google Inc. All rights reserved.
+
+  Licensed under the Apache License, Version 2.0 (the "License");
+  you may not use this file except in compliance with the License.
+  You may obtain a copy of the License at
+
+      https://www.apache.org/licenses/LICENSE-2.0
+
+  Unless required by applicable law or agreed to in writing, software
+  distributed under the License is distributed on an "AS IS" BASIS,
+  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+  See the License for the specific language governing permissions and
+  limitations under the License
+-->
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
+    <title>Livebridge </title>
+    <link rel="icon" type="image/png" href="bridge.png">
+    
+    <link rel="stylesheet" href="bower_components/dialog-polyfill/dialog-polyfill.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:regular,bold,italic,thin,light,bolditalic,black,medium&amp;lang=en">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="https://code.getmdl.io/1.1.3/material.teal-red.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <style>
+    .content-grid {
+      width: 1024px;
+    }
+
+    </style>
+    <script src="bower_components/dialog-polyfill/dialog-polyfill.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/lodash.js/4.13.1/lodash.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0/jquery.min.js"></script>
+  </head>
+  <body>
+    <div class="mdl-layout mdl-layout--fixed-header mdl-js-layout ">
+      <header class="demo-header mdl-layout__header mdl-layout__header--scroll mdl-color--grey-500 ">
+        <div class="mdl-layout__header-row">
+            <span class="mdl-layout-title"><img src="newslab-logo.gif" style="height:30px">  livebridge</span>
+            &nbsp;
+           <button class="mdl-button mdl-js-button mdl-button--fab mdl-button--mini-fab" id="open_add_bridge">
+                <i class="material-icons">add</i>
+            </button>
+            &nbsp;
+            <!-- <a class="mdl-button mdl-color--grey-400" href="https://docs.google.com/document/d/1e7pr8q1zdqf3ep2VIxGbbCur0cAjkaSJ5I4m_NnoX3Q/edit?usp=sharing">Anleitung</a> -->
+           &nbsp;
+          <div class="mdl-layout-spacer"></div>
+      <div id="navigation" class="docs-navigation__container ">
+        <nav class="docs-navigation mdl-navigation ">
+        </nav>
+      </div>
+      <div id="navigation-clients" class="docs-navigation__container ">
+        <nav class="docs-navigation mdl-navigation ">
+        </nav>
+      </div>
+        <button id="bridges-menu"
+                class="mdl-button mdl-js-button mdl-button--icon">
+          <i class="material-icons">more_vert</i>
+        </button>
+            <ul id="bridges-menu-items" class="mdl-menu mdl-menu--bottom-right mdl-js-menu mdl-js-ripple-effect mdl-color--grey-400"
+                for="bridges-menu">
+            </ul>
+        </div>
+      </header>
+      <main class="mdl-layout__content mdl-color--grey-600">
+        <div class="demo-container mdl-grid">
+            <div class="content-grid mdl-grid">
+                <div class="mdl-cell mdl-cell--12-col">
+                    <div style="text-align: right" id="client-list">
+                    </div>
+                </div>
+            </div>
+            <div class="content-grid mdl-grid">
+              <div id="lb-col" class="mdl-cell mdl-cell--6-col">
+              <h4 class="mdl-color-text--grey-100">dpa.liveblog.pro</h2>
+<iframe src="" 
+width="100%" style="background-color: #ffffff; min-width: 360px; max-width: 640px" allowfullscreen height="2600" frameborder="0"></iframe>
+              </div>
+              <div id="sl-col" class="mdl-cell mdl-cell--6-col">
+                  <h4 class="mdl-color-text--grey-100">ScribbleLive <i>via livebridge</i></h2>
+<iframe src="" 
+width="100%" style="background-color: #ffffff; min-width: 360px; max-width: 640px" height="2600" allowfullscreen frameborder="0"></iframe>
+              </div>
+            </div>
+        </div>
+        <div class="demo-container mdl-grid">
+            <div class="content-grid mdl-grid">
+                <div class="mdl-cell mdl-cell--12-col">
+                 <p><b>All live bridges:</b> 
+                 <span id="bridges-list"></span>
+                 </p>
+                </div>
+            </div>
+        </div>
+        <footer class="demo-footer mdl-mini-footer">
+          <div class="mdl-mini-footer--left-section">
+            <ul class="mdl-mini-footer--link-list">
+              <li><a href="https://twitter.com/dpa-newslab">t</a></li>
+            </ul>
+          </div>
+        </footer>
+      </main>
+   <dialog id="add_bridge" class="mdl-dialog" style="width: 50%">
+    <form action="#">
+    <h4 class="mdl-dialog__title">Livebridge vorbereiten</h4>
+    <div class="mdl-dialog__content">
+          <p style="text-color: red;"><b id="dialogfeedback"></b></p>
+          <div id="configcode">
+          </div>
+          <div class="mdl-textfield mdl-js-textfield" >
+            <input class="mdl-textfield__input" type="text" id="thema">
+            <label class="mdl-textfield__label" for="liveblog">Thema</label>
+          </div>
+          <div class="mdl-textfield mdl-js-textfield" style="width: 100%">
+            <input class="mdl-textfield__input" type="text" id="liveblog">
+            <label class="mdl-textfield__label" for="liveblog">Liveblog URL</label>
+          </div>
+          <div class="mdl-textfield mdl-js-textfield" style="width: 100%">
+            <input class="mdl-textfield__input" type="text" id="scribblelive">
+            <label class="mdl-textfield__label" for="scribblelive">ScribbleLive URL</label>
+          </div>
+    </div>
+    <div class="mdl-dialog__actions">
+      <button type="button" class="mdl-button submit">Code erzeugen</button>
+      <button type="button" class="mdl-button close">Schließen</button>
+    </div>
+    </form>
+  </dialog>
+      
+      
+      
+    <script src="https://code.getmdl.io/1.1.3/material.min.js"></script>
+    <script id="sl-col-template" type="text/html">
+<h4 class="mdl-color-text--grey-100">ScribbleLive <i>via livebridge</i> <a target="sl-edit" href="https://client.scribblelive.com/Event/Writer/V2/Writer.aspx?Id=<%= id %>" class="mdl-button">Edit</a></h4>
+<iframe allowfullscreen src="//embed.scribblelive.com/Embed/v7.aspx?Id=<%= id %>&ThemeId=29714" 
+width="100%" style="overflow: hidden; background-color: #ffffff; min-width: 360px; max-width: 640px" height="2600" frameborder="0"></iframe>
+              </div>
+    </script>
+    <script id="lb-col-template" type="text/html">
+              <h4 class="mdl-color-text--grey-100">dpa.liveblog.pro 
+              <a target="lb-edit" class="mdl-button" href="<%= bridge.liveserver.edit %><%= id %>?panel=editor">Edit</a>
+              <a target="lb-embed" class="mdl-button" href="http://demo.dpa-newslab.com/dpa-live-embed-configurator/index_en.html?url=https://dpa.liveblog.pro/blogs/<%= id %>/index.html">Embed Code</a>
+              </h4>
+<iframe allowfullscreen src="<%= bridge.liveserver.live %><%= id %>/index.html" 
+width="100%" style="overflow: hidden; background-color: #ffffff; min-width: 360px; max-width: 640px" height="2600" frameborder="0"></iframe>
+    </script>
+    <script id="navigation-template" type="text/html">
+        <nav class="docs-navigation mdl-navigation ">
+          <% _.forEach(bridges,function(bridge) { %>
+          <a  class="mdl-navigation__link bridge_<%= bridge.source_id %>" href="#<%= bridge.source_id %>/<%= bridge.targets[0].event_id %>"><%= bridge.label %></a>
+          <% }) %>
+        </nav>
+    </script>
+    <script id="bridges-menu-template" type="text/html">
+     <% _.forEach(bridges,function(bridge) { %>
+        <li class="mdl-menu__item"><a class="mdl-navigation__link mdl-color-text--grey-800" href="#<%= bridge.source_id %>/<%= bridge.targets[0].event_id  %>"><%= bridge.label %></a></li>
+     <% }) %>
+        <li class="mdl-menu__item"><a class="mdl-navigation__link mdl-color-text--grey-800" href="#bridges-list">other ...</a></li>
+    </script>
+    <script id="bridges-list-template" type="text/html">
+     <% _.forEach(bridges,function(bridge) { %>
+        <a class="mdl-navigation__link mdl-color-text--grey-800" href="#<%= bridge.source_id %>/<%= bridge.targets[0].event_id  %>"><%= bridge.label %></a> &middot;
+     <% }) %>
+        end ;-) 
+    </script>
+    <script id="client-list-template" type="text/html">
+        <div>
+        <% _.forEach(client.links,function(l) { %><a class="mdl-button" target="client" href="<%= l.url %>"><%= l.title %></a><% }) %>
+        </div>
+    </script>
+    <script id="configcode-template" type="text/html">
+<textarea readonly style="width: 400px; height: 100px; font-size: 9px; border: 1px solid #808080; background-color: #e0e0e0">
+    - source_id: "<%= lbid %>"
+      endpoint: "https://dpa-api.liveblog.pro/api/"
+      label: "<%= thema %>"
+      type: "liveblog"
+      targets:
+        - type: "scribble"
+          event_id: "<%= slid %>"
+          auth: "admin"
+</textarea>
+     </script>
+
+
+    <script type="text/javascript">
+     $(window).ready(function() {
+            _.forEach($('script[type="text/html"]'), function(t) {
+                var $t = $(t);
+                window[$t.attr('id')] = _.template($t.html());
+            });
+             var dialog = document.querySelector("#add_bridge");
+             var showModalButton = document.querySelector("#open_add_bridge");
+             if (! dialog.showModal) {
+                   dialogPolyfill.registerDialog(dialog);
+             }
+            showModalButton.addEventListener('click', function() {
+                try {
+                    dialog.showModal();
+                } catch(e) {
+                    dialog.close();
+                    dialog.showModal();
+                }
+            });
+            dialog.querySelector('.close').addEventListener('click', function() {
+                    dialog.close();
+            });
+            dialog.querySelector('.submit').addEventListener('click', function() {
+                    var sl=$("#scribblelive").val();
+                    var lb=$("#liveblog").val();
+                    var tm=$("#thema").val();
+
+                    var slid=sl.match(/Id=([1-9][0-9]+)/);
+                    if (slid) {
+                        slid=slid[1];
+                    }
+                    var lbid=lb.match(/\/([0-9a-f][0-9a-f][0-9a-f][0-9a-f][0-9a-f][0-9a-f][0-9a-f][0-9a-f][0-9a-f][0-9a-f][0-9a-f][0-9a-f][0-9a-f][0-9a-f][0-9a-f][0-9a-f][0-9a-f][0-9a-f][0-9a-f][0-9a-f][0-9a-f][0-9a-f][0-9a-f][0-9a-f])[^0-9a-f]/);
+                    if (lbid) {
+                        lbid=lbid[1];
+                    }
+                    if ((lbid>"") && (slid>"")) {
+                        location.hash=lbid+"/"+slid;
+                        $("#dialogfeedback").html("Einrichtung vorbereitet. Bitte den Code unten an Martin Virtel, Gerd Kamp oder Paul Solbach senden!");
+                        $("#configcode").html(window["configcode-template"]({ lbid : lbid, slid : slid, thema: tm }));
+                    } else {
+                        $("#dialogfeedback").html("Die URLs entsprechen nicht dem erwarteten Muster: <br/>...Id=xxxxxxx... für ScribbleLive und <br/> .../a45234053434023ae456aea4.... für Liveblog");
+                        $("#configcode").html("");
+                    }
+
+            });
+
+
+        endpoint_to_live= {
+            "https://lb-master.test.superdesk.org/api/" : { live : "https://superdesk-test.s3-eu-west-1.amazonaws.com/lb-master/blogs/",
+                                                            edit : "https://lb-master.test.superdesk.org/#/liveblog/edit/" 
+                                                          },
+                                                          
+            "https://dpa-api.liveblog.pro/api/"         : { live : "https://dpa.liveblog.pro/blogs/",
+                                                            edit : "https://dpa.liveblog.pro/#/liveblog/edit/"
+                                                          }
+        };
+            
+        $.getJSON("bridges.json?" + Math.floor(Math.random()*1000),function(data) {
+            var l={};
+            _.forEach(data.bridges,function(b) {
+                b.url="#"+b.source_id+"/"+b.targets[0].event_id;
+                b.liveserver=endpoint_to_live[b.endpoint];
+                l[b.url]=b
+            });
+            window.bridges=l
+            
+            $("#navigation").html(window["navigation-template"]({ bridges: _.slice(data.bridges,0,6) }));
+            $("#bridges-menu-items").html(window["bridges-menu-template"]({ bridges : _.slice(data.bridges,6,20)}));
+            $("#bridges-list").html(window["bridges-list-template"]({ bridges : data.bridges }));
+            if ("" == document.location.hash) {
+                document.location.hash=data.bridges[0].url;
+                } else  {
+                console.log("loading hash from URL");
+                _.delay(function() {
+                    $(window).trigger("hashchange");
+                },1000);
+            }
+                
+            });
+        $.getJSON("clients.json",function(data) {
+            window.clients=data.clients;
+            });
+     });
+     $(window).on('hashchange', function() {
+        console.log("hashchange triggered");
+        var h=document.location.hash
+        var ids = h.match(/([a-f0-9]+)\/([0-9]+)/);
+        if (ids) {
+         _.forEach(['lb-col','sl-col'],function(c,i) {
+                $('#'+c).html(window[c+"-template"]({ id : ids[i+1], bridge: bridges[h]}));
+            });
+         if (window.clients[ids[1]]) {
+             $("#client-list").html(window["client-list-template"]({ client : clients[ids[1]]}));
+             } else {
+             $("#client-list").html('');
+         }
+         document.title=window.bridges[h].label+" | Livebridge";
+         $("#navigation a,#bridges-menu-items li").removeClass("mdl-color--green");
+         $('#navigation a[href="'+h+'"]').addClass("mdl-color--green");
+         _.forEach($('#bridges-menu-items a[href="'+h+'"]'),function(e) {
+                $(e).parent().addClass("mdl-color--green");
+         });        
+        }
+    });
+
+
+    </script>
+  </body>
+</html>
