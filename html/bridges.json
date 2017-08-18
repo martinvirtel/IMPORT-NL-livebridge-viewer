@@ -56,6 +56,19 @@
    "label": "RESERVE 2017-8"
   }, 
   {
+   "source_id": "5995456cfcfd633a5a9ec0a0", 
+   "endpoint": "https://dpa-api.liveblog.pro/api/", 
+   "type": "liveblog", 
+   "targets": [
+    {
+     "event_id": "2645022", 
+     "type": "scribble", 
+     "auth": "admin"
+    }
+   ], 
+   "label": "RESERVE 2017-9"
+  }, 
+  {
    "startdate": "2017-06-30T08:00:00+02:00", 
    "endpoint": "https://dpa-api.liveblog.pro/api/", 
    "ed_note": "Die Berichterstattung endet ca. 30 Minuten nach Ende der Abstimmung.", 
