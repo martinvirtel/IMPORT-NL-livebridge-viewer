@@ -29,20 +29,6 @@
    "label": "Europa League Auslosung 2017"
   }, 
   {
-   "startdate": "2017-08-24T17:00:00+02:00", 
-   "endpoint": "https://dpa-api.liveblog.pro/api/", 
-   "source_id": "59476e90fcfd63bcab5f620f", 
-   "type": "liveblog", 
-   "targets": [
-    {
-     "event_id": "2606368", 
-     "type": "scribble", 
-     "auth": "admin"
-    }
-   ], 
-   "label": "CL-Auslosung 2017"
-  }, 
-  {
    "source_id": "59954549fcfd633a5a9ec098", 
    "endpoint": "https://dpa-api.liveblog.pro/api/", 
    "type": "liveblog", 
@@ -53,7 +39,7 @@
      "auth": "admin"
     }
    ], 
-   "label": "RESERVE 2017-8"
+   "label": "Ad-hoc Liveblog I"
   }, 
   {
    "source_id": "5995456cfcfd633a5a9ec0a0", 
@@ -66,7 +52,7 @@
      "auth": "admin"
     }
    ], 
-   "label": "RESERVE 2017-9"
+   "label": "Ad-hoc Liveblog II"
   }, 
   {
    "startdate": "2017-06-30T08:00:00+02:00", 
