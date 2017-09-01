@@ -43,7 +43,7 @@
     <div class="mdl-layout mdl-layout--fixed-header mdl-js-layout ">
       <header class="demo-header mdl-layout__header mdl-layout__header--scroll mdl-color--grey-500 ">
         <div class="mdl-layout__header-row">
-            <span class="mdl-layout-title"><img src="newslab-logo.gif" style="height:30px">  livebridge</span>
+            <span class="mdl-layout-title"><img src="newslab-logo.gif" style="height:30px">  <a target="_blank" href="https://github.com/dpa-newslab/livebridge">livebridge</a></span>
             &nbsp;
            <button class="mdl-button mdl-js-button mdl-button--fab mdl-button--mini-fab" id="open_add_bridge">
                 <i class="material-icons">add</i>
@@ -126,6 +126,11 @@ width="100%" style="background-color: #ffffff; min-width: 360px; max-width: 640p
             <input class="mdl-textfield__input" type="text" id="scribblelive">
             <label class="mdl-textfield__label" for="scribblelive">ScribbleLive URL</label>
           </div>
+          <div class="mdl-textfield mdl-js-textfield" style="width: 100%">
+            <input class="mdl-textfield__input" type="text" id="startdate">
+            <label class="mdl-textfield__label" for="startdate">Startdatum, sofern bekannt</label>
+          </div>
+          <div style="font-size: small">Beispiel für das Datumsformat: <b>2001-09-11T14:14:00</b> für 14:14 am 11. September 2001.</div>
     </div>
     <div class="mdl-dialog__actions">
       <button type="button" class="mdl-button submit">Code erzeugen</button>
@@ -181,6 +186,7 @@ width="100%" style="overflow: hidden; background-color: #ffffff; min-width: 360p
       endpoint: "https://dpa-api.liveblog.pro/api/"
       label: "<%= thema %>"
       type: "liveblog"
+      startdate: "<%= startdate %>"
       targets:
         - type: "scribble"
           event_id: "<%= slid %>"
@@ -211,6 +217,12 @@ width="100%" style="overflow: hidden; background-color: #ffffff; min-width: 360p
             dialog.querySelector('.close').addEventListener('click', function() {
                     dialog.close();
             });
+            document.querySelector("#startdate").addEventListener('focus', function() {
+                var s=$("#startdate")
+                if (s.val()=="") {
+                    s[0].parentElement.MaterialTextfield.change("2017-mm-ddThh:00:00+0200");
+                }
+            });
             dialog.querySelector('.submit').addEventListener('click', function() {
                     var sl=$("#scribblelive").val();
                     var lb=$("#liveblog").val();
@@ -227,7 +239,7 @@ width="100%" style="overflow: hidden; background-color: #ffffff; min-width: 360p
                     if ((lbid>"") && (slid>"")) {
                         location.hash=lbid+"/"+slid;
                         $("#dialogfeedback").html("Einrichtung vorbereitet. Bitte den Code unten an Martin Virtel, Gerd Kamp oder Paul Solbach senden!");
-                        $("#configcode").html(window["configcode-template"]({ lbid : lbid, slid : slid, thema: tm }));
+                        $("#configcode").html(window["configcode-template"]({ lbid : lbid, slid : slid, thema: tm, startdate: $("#startdate").val() }));
                     } else {
                         $("#dialogfeedback").html("Die URLs entsprechen nicht dem erwarteten Muster: <br/>...Id=xxxxxxx... für ScribbleLive und <br/> .../a45234053434023ae456aea4.... für Liveblog");
                         $("#configcode").html("");

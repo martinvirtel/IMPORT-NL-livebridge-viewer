@@ -41,6 +41,7 @@ def main() :
               '_id'        : br.get("source_id"),
               'endpoint'   : br.get("endpoint"),
               'public_url' : "https://dpa.liveblog.pro/dpa/blogs/{source_id}/index.html".format(**br),
+              'ed_note'    : br.get("ed_note",""),
               'startdate'  : br.get("startdate")
             }
             for br in bridges
