@@ -1,66 +1,6 @@
 {
  "bridges": [
   {
-   "source_id": "59527f9bfcfd6373267d954a",
-   "label": "Abstimmung \u00fcber \u00bbEhe f\u00fcr alle\u00ab",
-   "endpoint": "https://dpa-api.liveblog.pro/api/",
-   "targets": [
-    {
-     "auth": "admin",
-     "type": "scribble",
-     "event_id": "2614041"
-    }
-   ],
-   "startdate": "2017-06-30T08:00:00+02:00",
-   "ed_note": "Die Berichterstattung endet ca. 30 Minuten nach Ende der Abstimmung.",
-   "type": "liveblog"
-  },
-  {
-   "source_id": "5948ed0afcfd63bcadd85a67",
-   "label": "Fu\u00dfball-Sommertransfers",
-   "endpoint": "https://dpa-api.liveblog.pro/api/",
-   "targets": [
-    {
-     "auth": "admin",
-     "type": "scribble",
-     "event_id": "2607782"
-    }
-   ],
-   "startdate": "2017-07-01T14:00:00+02:00",
-   "type": "liveblog"
-  },
-  {
-   "source_id": "5947adbffcfd63bcac825d42",
-   "label": "Staatsakt f\u00fcr Helmut Kohl",
-   "endpoint": "https://dpa-api.liveblog.pro/api/",
-   "targets": [
-    {
-     "auth": "admin",
-     "type": "scribble",
-     "event_id": "2606768"
-    }
-   ],
-   "startdate": "2017-07-01T14:00:00+02:00",
-   "type": "liveblog"
-  },
-  {
-   "source_id": "594764d8fcfd63bcadd8592c",
-   "label": "G20-Gipfel in Hamburg",
-   "endpoint": "https://dpa-api.liveblog.pro/api/",
-   "targets": [
-    {
-     "auth": "admin",
-     "type": "scribble",
-     "event_id": "2606360"
-    }
-   ],
-   "startdate": "2017-07-08T16:00:00+02:00",
-   "type": "liveblog"
-  },
-  {
-   "source_id": "5947806efcfd63bcaa33acdf",
-   "label": "TV-Duell Merkel vs. Schulz",
-   "endpoint": "https://dpa-api.liveblog.pro/api/",
    "targets": [
     {
      "auth": "admin",
@@ -68,12 +8,138 @@
      "event_id": "2606537"
     }
    ],
+   "label": "TV-Duell Merkel vs. Schulz",
    "startdate": "2017-09-03T19:00:00+02:00",
-   "type": "liveblog"
+   "type": "liveblog",
+   "source_id": "5947806efcfd63bcaa33acdf",
+   "endpoint": "https://dpa-api.liveblog.pro/api/"
   },
   {
-   "source_id": "59476e90fcfd63bcab5f620f",
-   "label": "Ad-hoc-Liveblog 2",
+   "targets": [
+    {
+     "auth": "admin",
+     "type": "scribble",
+     "event_id": "2646680"
+    }
+   ],
+   "label": "Apple Keynote",
+   "startdate": "2017-09-12T19:00:00+02:00",
+   "type": "liveblog",
+   "source_id": "59985e2dfcfd6373249a742a",
+   "endpoint": "https://dpa-api.liveblog.pro/api/"
+  },
+  {
+   "targets": [
+    {
+     "auth": "admin",
+     "type": "scribble",
+     "event_id": "2606374"
+    }
+   ],
+   "label": "Anschlag in Barcelona",
+   "startdate": "2017-08-17T18:32:00+00:00",
+   "type": "liveblog",
+   "source_id": "59476eb0fcfd63bcab5f6217",
+   "endpoint": "https://dpa-api.liveblog.pro/api/"
+  },
+  {
+   "targets": [
+    {
+     "auth": "admin",
+     "type": "scribble",
+     "event_id": "2572240"
+    }
+   ],
+   "label": "Europa League Auslosung 2017",
+   "startdate": "2017-08-25T12:00:00+02:00",
+   "type": "liveblog",
+   "source_id": "5910acf3c158bd93652dba39",
+   "endpoint": "https://dpa-api.liveblog.pro/api/"
+  },
+  {
+   "endpoint": "https://dpa-api.liveblog.pro/api/",
+   "targets": [
+    {
+     "auth": "admin",
+     "type": "scribble",
+     "event_id": "2645432"
+    }
+   ],
+   "type": "liveblog",
+   "source_id": "59954549fcfd633a5a9ec098",
+   "label": "Ad-hoc Liveblog I"
+  },
+  {
+   "endpoint": "https://dpa-api.liveblog.pro/api/",
+   "targets": [
+    {
+     "auth": "admin",
+     "type": "scribble",
+     "event_id": "2645022"
+    }
+   ],
+   "type": "liveblog",
+   "source_id": "5995456cfcfd633a5a9ec0a0",
+   "label": "Ad-hoc Liveblog II"
+  },
+  {
+   "targets": [
+    {
+     "auth": "admin",
+     "type": "scribble",
+     "event_id": "2614041"
+    }
+   ],
+   "ed_note": "Die Berichterstattung endet ca. 30 Minuten nach Ende der Abstimmung.",
+   "label": "Abstimmung \u00fcber \u00bbEhe f\u00fcr alle\u00ab",
+   "startdate": "2017-06-30T08:00:00+02:00",
+   "type": "liveblog",
+   "source_id": "59527f9bfcfd6373267d954a",
+   "endpoint": "https://dpa-api.liveblog.pro/api/"
+  },
+  {
+   "targets": [
+    {
+     "auth": "admin",
+     "type": "scribble",
+     "event_id": "2607782"
+    }
+   ],
+   "label": "Fu\u00dfball-Sommertransfers",
+   "startdate": "2017-07-01T14:00:00+02:00",
+   "type": "liveblog",
+   "source_id": "5948ed0afcfd63bcadd85a67",
+   "endpoint": "https://dpa-api.liveblog.pro/api/"
+  },
+  {
+   "targets": [
+    {
+     "auth": "admin",
+     "type": "scribble",
+     "event_id": "2606768"
+    }
+   ],
+   "label": "Staatsakt f\u00fcr Helmut Kohl",
+   "startdate": "2017-07-01T14:00:00+02:00",
+   "type": "liveblog",
+   "source_id": "5947adbffcfd63bcac825d42",
+   "endpoint": "https://dpa-api.liveblog.pro/api/"
+  },
+  {
+   "targets": [
+    {
+     "auth": "admin",
+     "type": "scribble",
+     "event_id": "2606360"
+    }
+   ],
+   "label": "G20-Gipfel in Hamburg",
+   "startdate": "2017-07-08T16:00:00+02:00",
+   "type": "liveblog",
+   "source_id": "594764d8fcfd63bcadd8592c",
+   "endpoint": "https://dpa-api.liveblog.pro/api/"
+  },
+  {
    "endpoint": "https://dpa-api.liveblog.pro/api/",
    "targets": [
     {
@@ -82,25 +148,11 @@
      "event_id": "2606368"
     }
    ],
-   "type": "liveblog"
+   "type": "liveblog",
+   "source_id": "59476e90fcfd63bcab5f620f",
+   "label": "CL-Auslosung 2017"
   },
   {
-   "source_id": "59476eb0fcfd63bcab5f6217",
-   "label": "Ad-hoc-Liveblog 3",
-   "endpoint": "https://dpa-api.liveblog.pro/api/",
-   "targets": [
-    {
-     "auth": "admin",
-     "type": "scribble",
-     "event_id": "2606374"
-    }
-   ],
-   "type": "liveblog"
-  },
-  {
-   "source_id": "58ff01d7c158bd93652db78d",
-   "label": "2017-06-03 Anschlag in London",
-   "endpoint": "https://dpa-api.liveblog.pro/api/",
    "targets": [
     {
      "auth": "admin",
@@ -108,13 +160,13 @@
      "event_id": "2561254"
     }
    ],
+   "label": "2017-06-03 Anschlag in London",
    "startdate": "2017-06-03T07:32:00+00:00",
-   "type": "liveblog"
+   "type": "liveblog",
+   "source_id": "58ff01d7c158bd93652db78d",
+   "endpoint": "https://dpa-api.liveblog.pro/api/"
   },
   {
-   "source_id": "592fdaa0fcfd6300f54315de",
-   "label": "Trumps Entscheidung zum Klimaabkommen",
-   "endpoint": "https://dpa-api.liveblog.pro/api/",
    "targets": [
     {
      "auth": "admin",
@@ -122,13 +174,13 @@
      "event_id": "2592954"
     }
    ],
+   "label": "Trumps Entscheidung zum Klimaabkommen",
    "startdate": "2017-06-01T18:00:00+00:00",
-   "type": "liveblog"
+   "type": "liveblog",
+   "source_id": "592fdaa0fcfd6300f54315de",
+   "endpoint": "https://dpa-api.liveblog.pro/api/"
   },
   {
-   "source_id": "5910ad0ec158bd93652dba3c",
-   "label": "Anschlag in Manchester",
-   "endpoint": "https://dpa-api.liveblog.pro/api/",
    "targets": [
     {
      "auth": "admin",
@@ -136,13 +188,13 @@
      "event_id": "2572256"
     }
    ],
+   "label": "Anschlag in Manchester",
    "startdate": "2017-05-23T05:00:00+00:00",
-   "type": "liveblog"
+   "type": "liveblog",
+   "source_id": "5910ad0ec158bd93652dba3c",
+   "endpoint": "https://dpa-api.liveblog.pro/api/"
   },
   {
-   "source_id": "5913492ac158bd935f5f0220",
-   "label": "Apple WWDC 2017",
-   "endpoint": "https://dpa-api.liveblog.pro/api/",
    "targets": [
     {
      "auth": "admin",
@@ -150,13 +202,13 @@
      "event_id": "2574355"
     }
    ],
+   "label": "Apple WWDC 2017",
    "startdate": "2017-06-05T16:00:00+00:00",
-   "type": "liveblog"
+   "type": "liveblog",
+   "source_id": "5913492ac158bd935f5f0220",
+   "endpoint": "https://dpa-api.liveblog.pro/api/"
   },
   {
-   "source_id": "59132e24c158bd936ad0b3b2",
-   "label": "Nato-Gipfel in Br\u00fcssel mit Trump",
-   "endpoint": "https://dpa-api.liveblog.pro/api/",
    "targets": [
     {
      "auth": "admin",
@@ -164,12 +216,13 @@
      "event_id": "2574270"
     }
    ],
+   "label": "Nato-Gipfel in Br\u00fcssel mit Trump",
    "startdate": "2017-05-25T06:00:00+00:00",
-   "type": "liveblog"
+   "type": "liveblog",
+   "source_id": "59132e24c158bd936ad0b3b2",
+   "endpoint": "https://dpa-api.liveblog.pro/api/"
   },
   {
-   "source_id": "59116744c158bd935136eec7",
-   "label": "Google I/O 2017",
    "endpoint": "https://dpa-api.liveblog.pro/api/",
    "targets": [
     {
@@ -178,12 +231,11 @@
      "event_id": "2572715"
     }
    ],
-   "type": "liveblog"
+   "type": "liveblog",
+   "source_id": "59116744c158bd935136eec7",
+   "label": "Google I/O 2017"
   },
   {
-   "source_id": "5910b759c158bd93718f160e",
-   "label": "Neuwahl in Gro\u00dfbritannien",
-   "endpoint": "https://dpa-api.liveblog.pro/api/",
    "targets": [
     {
      "auth": "admin",
@@ -191,25 +243,13 @@
      "event_id": "2572327"
     }
    ],
+   "label": "Neuwahl in Gro\u00dfbritannien",
    "startdate": "2017-06-08T14:00:00+00:00",
-   "type": "liveblog"
+   "type": "liveblog",
+   "source_id": "5910b759c158bd93718f160e",
+   "endpoint": "https://dpa-api.liveblog.pro/api/"
   },
   {
-   "source_id": "5910acf3c158bd93652dba39",
-   "label": "RESERVE Ad-hoc-Liveblog 3",
-   "endpoint": "https://dpa-api.liveblog.pro/api/",
-   "targets": [
-    {
-     "auth": "admin",
-     "type": "scribble",
-     "event_id": "2572240"
-    }
-   ],
-   "type": "liveblog"
-  },
-  {
-   "source_id": "58f9ce93c158bd936ad0af90",
-   "label": "Landtagswahl in NRW",
    "endpoint": "https://dpa-api.liveblog.pro/api/",
    "targets": [
     {
@@ -218,11 +258,11 @@
      "event_id": "2557881"
     }
    ],
-   "type": "liveblog"
+   "type": "liveblog",
+   "source_id": "58f9ce93c158bd936ad0af90",
+   "label": "Landtagswahl in NRW"
   },
   {
-   "source_id": "58fe072ec158bd936fe2873a",
-   "label": "Stichwahl in Frankreich",
    "endpoint": "https://dpa-api.liveblog.pro/api/",
    "targets": [
     {
@@ -231,11 +271,11 @@
      "event_id": "2560959"
     }
    ],
-   "type": "liveblog"
+   "type": "liveblog",
+   "source_id": "58fe072ec158bd936fe2873a",
+   "label": "Stichwahl in Frankreich"
   },
   {
-   "source_id": "58ff0a8ec158bd936fe28753",
-   "label": "RESERVE Ad-hoc-Liveblog 2",
    "endpoint": "https://dpa-api.liveblog.pro/api/",
    "targets": [
     {
@@ -244,11 +284,11 @@
      "event_id": "2561280"
     }
    ],
-   "type": "liveblog"
+   "type": "liveblog",
+   "source_id": "58ff0a8ec158bd936fe28753",
+   "label": "Brand im Grenfell Tower"
   },
   {
-   "source_id": "58d103ddc158bd936ad0a804",
-   "label": "Frankreich: 1. Runde Pr\u00e4sidentschaftswahl",
    "endpoint": "https://dpa-api.liveblog.pro/api/",
    "targets": [
     {
@@ -257,11 +297,11 @@
      "event_id": "2529944"
     }
    ],
-   "type": "liveblog"
+   "type": "liveblog",
+   "source_id": "58d103ddc158bd936ad0a804",
+   "label": "Frankreich: 1. Runde Pr\u00e4sidentschaftswahl"
   },
   {
-   "source_id": "58f9a886c158bd937b4a212d",
-   "label": "Ermittlungen zum BVB-Anschlag",
    "endpoint": "https://dpa-api.liveblog.pro/api/",
    "targets": [
     {
@@ -270,11 +310,11 @@
      "event_id": "2557721"
     }
    ],
-   "type": "liveblog"
+   "type": "liveblog",
+   "source_id": "58f9a886c158bd937b4a212d",
+   "label": "Ermittlungen zum BVB-Anschlag"
   },
   {
-   "source_id": "58f5db11c158bd935f5efbd7",
-   "label": "Pressekonferenz Theresa May",
    "endpoint": "https://dpa-api.liveblog.pro/api/",
    "targets": [
     {
@@ -283,11 +323,11 @@
      "event_id": "2554918"
     }
    ],
-   "type": "liveblog"
+   "type": "liveblog",
+   "source_id": "58f5db11c158bd935f5efbd7",
+   "label": "Pressekonferenz Theresa May"
   },
   {
-   "source_id": "58edd0eac158bd936ea661bd",
-   "label": "Anschlag auf BVB-Bus",
    "endpoint": "https://dpa-api.liveblog.pro/api/",
    "targets": [
     {
@@ -296,11 +336,11 @@
      "event_id": "2549514"
     }
    ],
-   "type": "liveblog"
+   "type": "liveblog",
+   "source_id": "58edd0eac158bd936ea661bd",
+   "label": "Anschlag auf BVB-Bus"
   },
   {
-   "source_id": "58e79341c158bd935136e79d",
-   "label": "Lastwagen rast in Stockholm in Menschenmenge",
    "endpoint": "https://dpa-api.liveblog.pro/api/",
    "targets": [
     {
@@ -309,11 +349,11 @@
      "event_id": "2544914"
     }
    ],
-   "type": "liveblog"
+   "type": "liveblog",
+   "source_id": "58e79341c158bd935136e79d",
+   "label": "Lastwagen rast in Stockholm in Menschenmenge"
   },
   {
-   "source_id": "57a4ae7cc158bd06655fb509",
-   "label": "USA bombardieren Syrien",
    "endpoint": "https://dpa-api.liveblog.pro/api/",
    "targets": [
     {
@@ -322,11 +362,11 @@
      "event_id": "2257659"
     }
    ],
-   "type": "liveblog"
+   "type": "liveblog",
+   "source_id": "57a4ae7cc158bd06655fb509",
+   "label": "USA bombardieren Syrien"
   },
   {
-   "source_id": "58047b7dc158bd069570ea6b",
-   "label": "Anschlag St. Petersburg",
    "endpoint": "https://dpa-api.liveblog.pro/api/",
    "targets": [
     {
@@ -335,11 +375,11 @@
      "event_id": "2363612"
     }
    ],
-   "type": "liveblog"
+   "type": "liveblog",
+   "source_id": "58047b7dc158bd069570ea6b",
+   "label": "Anschlag St. Petersburg"
   },
   {
-   "source_id": "58dcde72c158bd93718f07e2",
-   "label": "ESC-Finale",
    "endpoint": "https://dpa-api.liveblog.pro/api/",
    "targets": [
     {
@@ -348,11 +388,11 @@
      "event_id": "2537637"
     }
    ],
-   "type": "liveblog"
+   "type": "liveblog",
+   "source_id": "58dcde72c158bd93718f07e2",
+   "label": "ESC-Finale"
   },
   {
-   "source_id": "58dccd10c158bd936ad0a9ed",
-   "label": "Landtagswahl in SH",
    "endpoint": "https://dpa-api.liveblog.pro/api/",
    "targets": [
     {
@@ -361,11 +401,11 @@
      "event_id": "2537606"
     }
    ],
-   "type": "liveblog"
+   "type": "liveblog",
+   "source_id": "58dccd10c158bd936ad0a9ed",
+   "label": "Landtagswahl in SH"
   },
   {
-   "source_id": "58a2b15fc158bd06931fa5ab",
-   "label": "LTW Saarland",
    "endpoint": "https://dpa-api.liveblog.pro/api/",
    "targets": [
     {
@@ -374,11 +414,11 @@
      "event_id": "2493933"
     }
    ],
-   "type": "liveblog"
+   "type": "liveblog",
+   "source_id": "58a2b15fc158bd06931fa5ab",
+   "label": "LTW Saarland"
   },
   {
-   "source_id": "58cf9202c158bd9354ab73da",
-   "label": "Echo 2017",
    "endpoint": "https://dpa-api.liveblog.pro/api/",
    "targets": [
     {
@@ -387,11 +427,11 @@
      "event_id": "2529225"
     }
    ],
-   "type": "liveblog"
+   "type": "liveblog",
+   "source_id": "58cf9202c158bd9354ab73da",
+   "label": "Echo 2017"
   },
   {
-   "source_id": "58cfa166c158bd936fe27f0b",
-   "label": "T\u00fcrkisches Verfassungsreferendum",
    "endpoint": "https://dpa-api.liveblog.pro/api/",
    "targets": [
     {
@@ -400,11 +440,11 @@
      "event_id": "2529276"
     }
    ],
-   "type": "liveblog"
+   "type": "liveblog",
+   "source_id": "58cfa166c158bd936fe27f0b",
+   "label": "T\u00fcrkisches Verfassungsreferendum"
   },
   {
-   "source_id": "58d22b8cc158bd936ad0a832",
-   "label": "+++Test+++",
    "endpoint": "https://dpa-api.liveblog.pro/api/",
    "targets": [
     {
@@ -413,11 +453,11 @@
      "event_id": "2530604"
     }
    ],
-   "type": "liveblog"
+   "type": "liveblog",
+   "source_id": "58d22b8cc158bd936ad0a832",
+   "label": "+++Test+++"
   },
   {
-   "source_id": "58b6c6b3c158bd9362cc872d",
-   "label": "Samsung Keynote",
    "endpoint": "https://dpa-api.liveblog.pro/api/",
    "targets": [
     {
@@ -426,11 +466,11 @@
      "event_id": "2510184"
     }
    ],
-   "type": "liveblog"
+   "type": "liveblog",
+   "source_id": "58b6c6b3c158bd9362cc872d",
+   "label": "Samsung Keynote"
   },
   {
-   "source_id": "58c14d20c158bd935136e207",
-   "label": "Merkel trifft erstmals Trump",
    "endpoint": "https://dpa-api.liveblog.pro/api/",
    "targets": [
     {
@@ -439,11 +479,11 @@
      "event_id": "2518284"
     }
    ],
-   "type": "liveblog"
+   "type": "liveblog",
+   "source_id": "58c14d20c158bd935136e207",
+   "label": "Merkel trifft erstmals Trump"
   },
   {
-   "source_id": "589d8f46c158bd06625d479c",
-   "label": "Mobile World Congress",
    "endpoint": "https://dpa-api.liveblog.pro/api/",
    "targets": [
     {
@@ -452,11 +492,11 @@
      "event_id": "2490678"
     }
    ],
-   "type": "liveblog"
+   "type": "liveblog",
+   "source_id": "589d8f46c158bd06625d479c",
+   "label": "Mobile World Congress"
   },
   {
-   "source_id": "589d9ddec158bd068380d079",
-   "label": "Politischer Aschermittwoch",
    "endpoint": "https://dpa-api.liveblog.pro/api/",
    "targets": [
     {
@@ -465,11 +505,11 @@
      "event_id": "2490714"
     }
    ],
-   "type": "liveblog"
+   "type": "liveblog",
+   "source_id": "589d9ddec158bd068380d079",
+   "label": "Politischer Aschermittwoch"
   },
   {
-   "source_id": "587e217dc158bd066ec385f4",
-   "label": "Wahl des Bundespr\u00e4sidenten",
    "endpoint": "https://dpa-api.liveblog.pro/api/",
    "targets": [
     {
@@ -478,11 +518,11 @@
      "event_id": "2465177"
     }
    ],
-   "type": "liveblog"
+   "type": "liveblog",
+   "source_id": "587e217dc158bd066ec385f4",
+   "label": "Wahl des Bundespr\u00e4sidenten"
   },
   {
-   "source_id": "5880b7fdc158bd0685116ba6",
-   "label": "Urteil zum Brexit-Streit",
    "endpoint": "https://dpa-api.liveblog.pro/api/",
    "targets": [
     {
@@ -491,11 +531,11 @@
      "event_id": "2465250"
     }
    ],
-   "type": "liveblog"
+   "type": "liveblog",
+   "source_id": "5880b7fdc158bd0685116ba6",
+   "label": "Urteil zum Brexit-Streit"
   },
   {
-   "source_id": "5884dbfac158bd067c7b51cb",
-   "label": "Oscars 2017",
    "endpoint": "https://dpa-api.liveblog.pro/api/",
    "targets": [
     {
@@ -504,11 +544,11 @@
      "event_id": "2470703"
     }
    ],
-   "type": "liveblog"
+   "type": "liveblog",
+   "source_id": "5884dbfac158bd067c7b51cb",
+   "label": "Oscars 2017"
   },
   {
-   "source_id": "586b9ba7c158bd067c7b4e40",
-   "label": "Fu\u00dfball - Winter-Transfermarkt",
    "endpoint": "https://dpa-api.liveblog.pro/api/",
    "targets": [
     {
@@ -517,11 +557,11 @@
      "event_id": "2449971"
     }
    ],
-   "type": "liveblog"
+   "type": "liveblog",
+   "source_id": "586b9ba7c158bd067c7b4e40",
+   "label": "Fu\u00dfball - Winter-Transfermarkt"
   },
   {
-   "source_id": "587e1d6ac158bd06887d1f32",
-   "label": "Er\u00f6ffnung 67. Berlinale",
    "endpoint": "https://dpa-api.liveblog.pro/api/",
    "targets": [
     {
@@ -530,11 +570,11 @@
      "event_id": "2463180"
     }
    ],
-   "type": "liveblog"
+   "type": "liveblog",
+   "source_id": "587e1d6ac158bd06887d1f32",
+   "label": "Er\u00f6ffnung 67. Berlinale"
   },
   {
-   "source_id": "587e2689c158bd066fe2e620",
-   "label": "Grammy Awards 2017",
    "endpoint": "https://dpa-api.liveblog.pro/api/",
    "targets": [
     {
@@ -543,11 +583,11 @@
      "event_id": "2463216"
     }
    ],
-   "type": "liveblog"
+   "type": "liveblog",
+   "source_id": "587e2689c158bd066fe2e620",
+   "label": "Grammy Awards 2017"
   },
   {
-   "source_id": "585137e3c158bd06696d93d7",
-   "label": "Urteil im NPD-Verbotsverfahren",
    "endpoint": "https://dpa-api.liveblog.pro/api/",
    "targets": [
     {
@@ -556,11 +596,11 @@
      "event_id": "2436196"
     }
    ],
-   "type": "liveblog"
+   "type": "liveblog",
+   "source_id": "585137e3c158bd06696d93d7",
+   "label": "Urteil im NPD-Verbotsverfahren"
   },
   {
-   "source_id": "584fe950c158bd067861476b",
-   "label": "Amtseinf\u00fchrung von Donald Trump",
    "endpoint": "https://dpa-api.liveblog.pro/api/",
    "targets": [
     {
@@ -569,11 +609,11 @@
      "event_id": "2435203"
     }
    ],
-   "type": "liveblog"
+   "type": "liveblog",
+   "source_id": "584fe950c158bd067861476b",
+   "label": "Amtseinf\u00fchrung von Donald Trump"
   },
   {
-   "source_id": "586f6f98c158bd067659cc6a",
-   "label": "2016-01-11 Trump Pk",
    "endpoint": "https://dpa-api.liveblog.pro/api/",
    "targets": [
     {
@@ -582,11 +622,11 @@
      "event_id": "2452288"
     }
    ],
-   "type": "liveblog"
+   "type": "liveblog",
+   "source_id": "586f6f98c158bd067659cc6a",
+   "label": "2016-01-11 Trump Pk"
   },
   {
-   "source_id": "5847d1d3c158bd067659c6fb",
-   "label": "CES 2017",
    "endpoint": "https://dpa-api.liveblog.pro/api/",
    "targets": [
     {
@@ -595,11 +635,11 @@
      "event_id": "2428189"
     }
    ],
-   "type": "liveblog"
+   "type": "liveblog",
+   "source_id": "5847d1d3c158bd067659c6fb",
+   "label": "CES 2017"
   },
   {
-   "source_id": "576a8ac4c158bd066b856000",
-   "label": "Kurioses",
    "endpoint": "https://dpa-api.liveblog.pro/api/",
    "targets": [
     {
@@ -609,15 +649,15 @@
     },
     {
      "auth": "slack",
-     "channel": "livebridge-test",
-     "type": "slack"
+     "type": "slack",
+     "channel": "livebridge-test"
     }
    ],
-   "type": "liveblog"
+   "type": "liveblog",
+   "source_id": "576a8ac4c158bd066b856000",
+   "label": "Kurioses"
   },
   {
-   "source_id": "57963bd6c158bd0674362c91",
-   "label": "Anschlag in Berlin",
    "endpoint": "https://dpa-api.liveblog.pro/api/",
    "targets": [
     {
@@ -626,11 +666,11 @@
      "event_id": "2246191"
     }
    ],
-   "type": "liveblog"
+   "type": "liveblog",
+   "source_id": "57963bd6c158bd0674362c91",
+   "label": "Anschlag in Berlin"
   },
   {
-   "source_id": "582ecf7fc158bd0679f06348",
-   "label": "CL-Achtelfinal-Auslosung",
    "endpoint": "https://dpa-api.liveblog.pro/api/",
    "targets": [
     {
@@ -639,11 +679,11 @@
      "event_id": "2404091"
     }
    ],
-   "type": "liveblog"
+   "type": "liveblog",
+   "source_id": "582ecf7fc158bd0679f06348",
+   "label": "CL-Achtelfinal-Auslosung"
   },
   {
-   "source_id": "57eb8126c158bd0679133e0e",
-   "label": "Google (4.10.) ",
    "endpoint": "https://dpa-api.liveblog.pro/api/",
    "targets": [
     {
@@ -652,11 +692,11 @@
      "event_id": "2340506"
     }
    ],
-   "type": "liveblog"
+   "type": "liveblog",
+   "source_id": "57eb8126c158bd0679133e0e",
+   "label": "Google (4.10.) "
   },
   {
-   "source_id": "57e0de87c158bd0691ce2476",
-   "label": "Bambi 2016",
    "endpoint": "https://dpa-api.liveblog.pro/api/",
    "targets": [
     {
@@ -665,11 +705,11 @@
      "event_id": "2327921"
     }
    ],
-   "type": "liveblog"
+   "type": "liveblog",
+   "source_id": "57e0de87c158bd0691ce2476",
+   "label": "Bambi 2016"
   },
   {
-   "source_id": "57963b98c158bd068b69ee91",
-   "label": "Wahl Berlin",
    "endpoint": "https://dpa-api.liveblog.pro/api/",
    "targets": [
     {
@@ -678,11 +718,11 @@
      "event_id": "2246190"
     }
    ],
-   "type": "liveblog"
+   "type": "liveblog",
+   "source_id": "57963b98c158bd068b69ee91",
+   "label": "Wahl Berlin"
   },
   {
-   "source_id": "57d9409cc158bd0686e032d6",
-   "label": "Bekanntgabe Friedensnobelpreis",
    "endpoint": "https://dpa-api.liveblog.pro/api/",
    "targets": [
     {
@@ -691,11 +731,11 @@
      "event_id": "2320443"
     }
    ],
-   "type": "liveblog"
+   "type": "liveblog",
+   "source_id": "57d9409cc158bd0686e032d6",
+   "label": "Bekanntgabe Friedensnobelpreis"
   },
   {
-   "source_id": "57a81f3ac158bd0691ce1c05",
-   "label": "LTW MVPP",
    "endpoint": "https://dpa-api.liveblog.pro/api/",
    "targets": [
     {
@@ -704,11 +744,11 @@
      "event_id": "2263557"
     }
    ],
-   "type": "liveblog"
+   "type": "liveblog",
+   "source_id": "57a81f3ac158bd0691ce1c05",
+   "label": "LTW MVPP"
   },
   {
-   "source_id": "57963b4ac158bd06791330ba",
-   "label": "Scheel",
    "endpoint": "https://dpa-api.liveblog.pro/api/",
    "targets": [
     {
@@ -717,11 +757,11 @@
      "event_id": "2246188"
     }
    ],
-   "type": "liveblog"
+   "type": "liveblog",
+   "source_id": "57963b4ac158bd06791330ba",
+   "label": "Scheel"
   },
   {
-   "source_id": "57b40bf5c158bd066f33aec7",
-   "label": "Apple Keynote",
    "endpoint": "https://dpa-api.liveblog.pro/api/",
    "targets": [
     {
@@ -730,11 +770,11 @@
      "event_id": "2284434"
     }
    ],
-   "type": "liveblog"
+   "type": "liveblog",
+   "source_id": "57b40bf5c158bd066f33aec7",
+   "label": "Apple Keynote"
   },
   {
-   "source_id": "579383bfc158bd068b69edfe",
-   "label": "Bayern",
    "endpoint": "https://dpa-api.liveblog.pro/api/",
    "targets": [
     {
@@ -743,11 +783,11 @@
      "event_id": "2239469"
     }
    ],
-   "type": "liveblog"
+   "type": "liveblog",
+   "source_id": "579383bfc158bd068b69edfe",
+   "label": "Bayern"
   },
   {
-   "source_id": "578bb3ffc158bd069570d8a8",
-   "label": "M\u00fcnchen",
    "endpoint": "https://dpa-api.liveblog.pro/api/",
    "targets": [
     {
@@ -756,11 +796,11 @@
      "event_id": "2230269"
     }
    ],
-   "type": "liveblog"
+   "type": "liveblog",
+   "source_id": "578bb3ffc158bd069570d8a8",
+   "label": "M\u00fcnchen"
   },
   {
-   "source_id": "578949e7c158bd0679132ddd",
-   "label": "T\u00fcrkei",
    "endpoint": "https://dpa-api.liveblog.pro/api/",
    "targets": [
     {
@@ -769,11 +809,11 @@
      "event_id": "2226283"
     }
    ],
-   "type": "liveblog"
+   "type": "liveblog",
+   "source_id": "578949e7c158bd0679132ddd",
+   "label": "T\u00fcrkei"
   },
   {
-   "source_id": "5788290ec158bd0679132d43",
-   "label": "Nizza",
    "endpoint": "https://dpa-api.liveblog.pro/api/",
    "targets": [
     {
@@ -782,11 +822,11 @@
      "event_id": "2222912"
     }
    ],
-   "type": "liveblog"
+   "type": "liveblog",
+   "source_id": "5788290ec158bd0679132d43",
+   "label": "Nizza"
   },
   {
-   "source_id": "57975d8bc158bd0686e02a27",
-   "label": "Sommer-PK Merkel",
    "endpoint": "https://dpa-api.liveblog.pro/api/",
    "targets": [
     {
@@ -795,11 +835,11 @@
      "event_id": "2247042"
     }
    ],
-   "type": "liveblog"
+   "type": "liveblog",
+   "source_id": "57975d8bc158bd0686e02a27",
+   "label": "Sommer-PK Merkel"
   },
   {
-   "source_id": "579719eac158bd06655fb2fe",
-   "label": "CL-Auslosung",
    "endpoint": "https://dpa-api.liveblog.pro/api/",
    "targets": [
     {
@@ -808,11 +848,11 @@
      "event_id": "2246728"
     }
    ],
-   "type": "liveblog"
+   "type": "liveblog",
+   "source_id": "579719eac158bd06655fb2fe",
+   "label": "CL-Auslosung"
   },
   {
-   "source_id": "576983dec158bd068b69e8e1",
-   "label": "S\u00fcley's Test",
    "endpoint": "https://dpa-api.liveblog.pro/api/",
    "targets": [
     {
@@ -821,11 +861,11 @@
      "event_id": "2246692"
     }
    ],
-   "type": "liveblog"
+   "type": "liveblog",
+   "source_id": "576983dec158bd068b69e8e1",
+   "label": "S\u00fcley's Test"
   },
   {
-   "source_id": "576967fdc158bd068036eec8",
-   "label": "Test (Live)",
    "endpoint": "https://dpa-api.liveblog.pro/api/",
    "targets": [
     {
@@ -835,15 +875,15 @@
     },
     {
      "auth": "slack",
-     "channel": "livebridge-test",
-     "type": "slack"
+     "type": "slack",
+     "channel": "livebridge-test"
     }
    ],
-   "type": "liveblog"
+   "type": "liveblog",
+   "source_id": "576967fdc158bd068036eec8",
+   "label": "Test (Live)"
   },
   {
-   "source_id": "576f8d27c158bd069b9caf45",
-   "label": "Kampf gegen IS",
    "endpoint": "https://dpa-api.liveblog.pro/api/",
    "targets": [
     {
@@ -852,11 +892,11 @@
      "event_id": "679672"
     }
    ],
-   "type": "liveblog"
+   "type": "liveblog",
+   "source_id": "576f8d27c158bd069b9caf45",
+   "label": "Kampf gegen IS"
   },
   {
-   "source_id": "576f8ef6c158bd067dd847f6",
-   "label": "Fl\u00fcchtlingskrise",
    "endpoint": "https://dpa-api.liveblog.pro/api/",
    "targets": [
     {
@@ -865,11 +905,11 @@
      "event_id": "1467124"
     }
    ],
-   "type": "liveblog"
+   "type": "liveblog",
+   "source_id": "576f8ef6c158bd067dd847f6",
+   "label": "Fl\u00fcchtlingskrise"
   },
   {
-   "source_id": "576f8db6c158bd067dd847ef",
-   "label": "Bundesliga",
    "endpoint": "https://dpa-api.liveblog.pro/api/",
    "targets": [
     {
@@ -878,11 +918,11 @@
      "event_id": "997275"
     }
    ],
-   "type": "liveblog"
+   "type": "liveblog",
+   "source_id": "576f8db6c158bd067dd847ef",
+   "label": "Bundesliga"
   },
   {
-   "source_id": "576f8e04c158bd0686e0245f",
-   "label": "US-Wahlen",
    "endpoint": "https://dpa-api.liveblog.pro/api/",
    "targets": [
     {
@@ -891,11 +931,11 @@
      "event_id": "1613263"
     }
    ],
-   "type": "liveblog"
+   "type": "liveblog",
+   "source_id": "576f8e04c158bd0686e0245f",
+   "label": "US-Wahlen"
   },
   {
-   "source_id": "576f8fb2c158bd069570d5d9",
-   "label": "Fotos",
    "endpoint": "https://dpa-api.liveblog.pro/api/",
    "targets": [
     {
@@ -904,7 +944,9 @@
      "event_id": "1253465"
     }
    ],
-   "type": "liveblog"
+   "type": "liveblog",
+   "source_id": "576f8fb2c158bd069570d5d9",
+   "label": "Fotos"
   }
  ]
 }
