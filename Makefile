@@ -26,3 +26,10 @@ pull-livebridge-config:
 
 backup-livebridge-config:
 	aws --profile=liveblog --region=eu-central-1 s3 cp s3://newslab-livebridge/control-live.yaml backup/$$(basename $(YAML_SOURCE))-backup-$$(date +%Y%m%d%H%M%S)
+
+
+push-json-configs:
+	python3 ./bin/write-jsons.py ;\
+	AWS_PROFILE=martin.virtel@dpa-info.com aws s3 sync --acl=public-read  config-out/ s3://dpa-newslab-prototype-webspace/dpalive/livebridge/actives/
+
+
