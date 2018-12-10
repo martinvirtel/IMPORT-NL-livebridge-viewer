@@ -144,10 +144,6 @@
             <label class="mdl-textfield__label" for="scribblelive">ScribbleLive URL</label>
           </div>
           <div class="mdl-textfield mdl-js-textfield" style="width: 100%">
-            <input class="mdl-textfield__input" type="text" id="syndication">
-            <label class="mdl-textfield__label" for="syndication">ScribbleLive Syndication Code</label>
-          </div>
-          <div class="mdl-textfield mdl-js-textfield" style="width: 100%">
             <input class="mdl-textfield__input" type="text" id="startdate">
             <label class="mdl-textfield__label" for="startdate">Startdatum, sofern bekannt</label>
           </div>
@@ -189,22 +185,21 @@ width="100%" style="overflow: hidden; background-color: #ffffff; " height="2600"
     <script id="navigation-template" type="text/html">
         <nav class="docs-navigation mdl-navigation ">
           <% _.forEach(bridges,function(bridge) { %>
-          <a  class="mdl-navigation__link bridge_<%= bridge.source_id %>" href="#<%= bridge.source_id %>/<%= bridge.target_id %>"><%= bridge.label %></a>
+          <a  class="mdl-navigation__link bridge_<%= bridge.source_id %>" href="#<%= bridge.source_id %>/<%= bridge.targets[0].event_id %>"><%= bridge.label %></a>
           <% }) %>
         </nav>
     </script>
     <script id="bridges-menu-template" type="text/html">
      <% _.forEach(bridges,function(bridge) { %>
-        <li class="mdl-menu__item"><a class="mdl-navigation__link mdl-color-text--grey-800" href="#<%= bridge.source_id %>/<%= bridge.target_id  %>"><%= bridge.label %></a></li>
+        <li class="mdl-menu__item"><a class="mdl-navigation__link mdl-color-text--grey-800" href="#<%= bridge.source_id %>/<%= bridge.targets[0].event_id  %>"><%= bridge.label %></a></li>
      <% }) %>
         <li class="mdl-menu__item"><a class="mdl-navigation__link mdl-color-text--grey-800" href="#bridges-list">other ...</a></li>
     </script>
     <script id="bridges-list-template" type="text/html">
      <% _.forEach(bridges,function(bridge) { %>
-        <a class="mdl-navigation__link mdl-color-text--grey-800" href="#<%= bridge.source_id %>/<%= bridge.target_id  %>"><%= bridge.label %></a> &middot;
+        <a class="mdl-navigation__link mdl-color-text--grey-800" href="#<%= bridge.source_id %>/<%= bridge.targets[0].event_id  %>"><%= bridge.label %></a> &middot;
      <% }) %>
-        end ;-)
-     <a class="mdl-navigation__link mdl-color-text--grey-100" href="./old.html">ARCHIVE</a>
+        end ;-) 
     </script>
     <script id="client-list-template" type="text/html">
         <div>
@@ -221,7 +216,6 @@ width="100%" style="overflow: hidden; background-color: #ffffff; " height="2600"
       targets:
         - type: "scribble"
           event_id: "<%= slid %>"
-          syndication_code: "<%= syndication %>"
           auth: "admin"
 </textarea>
      </script>
@@ -231,11 +225,7 @@ width="100%" style="overflow: hidden; background-color: #ffffff; " height="2600"
      $(window).ready(function() {
             _.forEach($('script[type="text/html"]'), function(t) {
                 var $t = $(t);
-                try {
-                   window[$t.attr('id')] = _.template($t.html());
-                } catch(e) {
-                   console.error("Template "+$t.attr('id')+" did not load: "+e);
-                }
+                window[$t.attr('id')] = _.template($t.html());
             });
              var dialog = document.querySelector("#add_bridge");
              var showModalButton = document.querySelector("#open_add_bridge");
@@ -274,8 +264,8 @@ width="100%" style="overflow: hidden; background-color: #ffffff; " height="2600"
                     }
                     if ((lbid>"") && (slid>"")) {
                         location.hash=lbid+"/"+slid;
-                        $("#dialogfeedback").html("Einrichtung vorbereitet. Bitte den Code unten an Martin Virtel senden!");
-                        $("#configcode").html(window["configcode-template"]({ lbid : lbid, slid : slid, thema: tm, startdate: $("#startdate").val(), syndication: $("#syndication").val() }));
+                        $("#dialogfeedback").html("Einrichtung vorbereitet. Bitte den Code unten an Martin Virtel, Gerd Kamp oder Paul Solbach senden!");
+                        $("#configcode").html(window["configcode-template"]({ lbid : lbid, slid : slid, thema: tm, startdate: $("#startdate").val() }));
                     } else {
                         $("#dialogfeedback").html("Die URLs entsprechen nicht dem erwarteten Muster: <br/>...Id=xxxxxxx... für ScribbleLive und <br/> .../a45234053434023ae456aea4.... für Liveblog");
                         $("#configcode").html("");
@@ -294,7 +284,7 @@ width="100%" style="overflow: hidden; background-color: #ffffff; " height="2600"
                                                           }
         };
             
-        $.getJSON("https://s3.eu-central-1.amazonaws.com/dpa-newslab-prototype-webspace/dpalive/livebridge/toc-live.json?" + Math.floor(Math.random()*1000),function(data) {
+        $.getJSON("bridges.json?" + Math.floor(Math.random()*1000),function(data) {
             var l={};
             var t_id=0;
             _.forEach(data.bridges,function(b) {
@@ -305,7 +295,6 @@ width="100%" style="overflow: hidden; background-color: #ffffff; " height="2600"
                 }
                 b.url="#"+b.source_id+"/"+t_id;
                 b.liveserver=endpoint_to_live[b.endpoint];
-                b.target_id=t_id;
                 l[b.url]=b
             });
             window.bridges=l
